@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.9'
     
@@ -26,13 +26,13 @@ jobs:
       run: python src/test_model.py
     
     - name: Upload model artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: iris-model
         path: model.joblib
     
     - name: Upload metrics
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: metrics
         path: metrics.json
