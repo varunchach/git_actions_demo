@@ -86,6 +86,9 @@ python src/test_model.py
 Check that `model.joblib` and `metrics.json` are created in the repo root.
 If both appear successfully, your project is ready for CI/CD automation.
 
+```bash
+python -m pytest -v 
+```
 ---
 
 ## ☁️ GitHub Actions — Server Implementation
